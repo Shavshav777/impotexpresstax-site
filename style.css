@@ -94,14 +94,14 @@ nav a:hover {
   background-color: #1b332f;
 }
 
-#services {
+section {
   max-width: 1000px;
   margin: 60px auto;
   padding: 20px;
   text-align: center;
 }
 
-#services h2 {
+section h2 {
   color: var(--navy);
   margin-bottom: 30px;
 }
@@ -122,15 +122,19 @@ nav a:hover {
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
+.service-item p {
+  margin-bottom: 20px;
+}
+
+.service-item .learn-button {
+  margin-top: 10px;
+}
+
 #contact {
   background-color: white;
   padding: 40px 20px;
   text-align: center;
   border-top: 1px solid #ddd;
-}
-
-#contact h2 {
-  color: var(--navy);
 }
 
 #contact a {
@@ -140,8 +144,4 @@ nav a:hover {
 }
 
 footer {
-  background-color: var(--navy);
-  color: white;
-  text-align: center;
-  padding: 16px;
-}
+  background-color
