@@ -187,4 +187,9 @@ footer {
   .subpage-text {
     text-align: center;
   }
+  
+  .privacy-section {
+  text-align: left;
+}
+
 }
