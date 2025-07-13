@@ -38,6 +38,8 @@ header {
   font-size: 1.8em;
   font-weight: bold;
   color: var(--gold);
+  text-decoration: none;
+  color: var(--green);
 }
 
 nav a {
