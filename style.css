@@ -145,7 +145,7 @@ footer {
 /* Subpage layout with text tile on left and image on right */
 .subpage-content {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
   gap: 30px;
   max-width: 1000px;
@@ -169,9 +169,11 @@ footer {
 }
 
 .subpage-content img {
-  flex: 0 0 250px;
-  max-width: 250px;
-  height: auto;
+  flex: 0 0 auto;      /* Allow image width to adjust */
+  width: auto;
+  height: 100%;        /* Make image height fill the container */
+  max-width: 300px;    /* Optional max width so it’s not too wide */
+  object-fit: cover;   /* Crop image nicely to fill */
   border-radius: 10px;
 }
 
