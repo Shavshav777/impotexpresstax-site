@@ -39,8 +39,7 @@ header {
   font-weight: bold;
   color: var(--gold);
   text-decoration: none;
-  color: var(--Gold);
-}
+  }
 
 nav a {
   color: var(--gold);
