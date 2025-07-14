@@ -190,7 +190,6 @@ footer {
   }
   
   .privacy-section {
-  text-align: left;
+  text-align: left !important;
 }
-
 }
