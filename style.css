@@ -191,7 +191,13 @@ footer {
     text-align: center;
   }
   
-  .privacy-section {
-  text-align: left !important;
+ .privacy-section {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: white;
+  text-align: left;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 }
