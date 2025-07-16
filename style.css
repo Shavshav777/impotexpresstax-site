@@ -146,7 +146,7 @@ footer {
 .subpage-content {
   display: flex;
   align-items: stretch;
-  justify-content: center;
+  justify-content: left;
   gap: 30px;
   max-width: 1000px;
   margin: 40px auto;
