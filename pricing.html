@@ -1,37 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pricing – Impôt Express Tax</title>
-  <link rel="stylesheet" href="style.css"> <!-- Link to your CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .pricing-columns {
+      display: flex;
+      gap: 20px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .pricing-card {
+      flex: 1;
+      min-width: 280px;
+      background-color: #f8f8f8;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .pricing-card h3 {
+      color: #2C4B47; /* TAX green */
+      margin-bottom: 10px;
+    }
+
+    .pricing-card p {
+      margin: 5px 0;
+      font-size: 1rem;
+    }
+
+    .addons {
+      margin-top: 40px;
+      text-align: center;
+      background-color: #f8f8f8;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .addons h3 {
+      color: #2C4B47;
+      margin-bottom: 15px;
+    }
+
+    .addons ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .addons li {
+      margin: 6px 0;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- HEADER (same as main site) -->
   <header>
-    <h1>Pricing</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="pricing.html" class="active">Pricing</a></li>
+      </ul>
+    </nav>
+    <h1>Impôt Express Tax</h1>
   </header>
 
   <main>
-    <section>
-      <h2>Our Pricing</h2>
-      <ul>
-        <li><strong>Standard Return</strong> – Federal and Provincial. Includes electronic transmission and digital signatures with TaxFolder.</li>
-        <li><strong>Self-Employed Individuals</strong> – Starting at $200 (depends on workload. Contact for an estimate).</li>
-        <li><strong>Incorporated Businesses</strong> – Starting at $600 (depends on workload. Contact for an estimate).</li>
-      </ul>
+    <h2 style="text-align:center; margin-bottom: 30px;">Our Pricing</h2>
 
+    <div class="pricing-columns">
+      <div class="pricing-card">
+        <h3>Standard Return</h3>
+        <p>Federal and Provincial</p>
+        <p>Electronic transmission</p>
+        <p>Digital signatures with TaxFolder</p>
+      </div>
+
+      <div class="pricing-card">
+        <h3>Self-Employed Individuals</h3>
+        <p>Starting at $200</p>
+        <p>(Depends on workload. Contact for an estimate)</p>
+      </div>
+
+      <div class="pricing-card">
+        <h3>Incorporated Businesses</h3>
+        <p>Starting at $600</p>
+        <p>(Depends on workload. Contact for an estimate)</p>
+      </div>
+    </div>
+
+    <div class="addons">
       <h3>Add-Ons</h3>
       <ul>
         <li>Pension Transfer – Additional $20</li>
         <li>Rental Income – Additional $50</li>
         <li>Sale of Primary Residence – Extra $30</li>
-        <li>You may also enquire about additional services specific to you that are not listed.</li>
+        <li>You may also enquire about additional services specific to you that are not listed</li>
       </ul>
-    </section>
+    </div>
   </main>
 
+  <!-- FOOTER (same as main site) -->
   <footer>
     <p>&copy; 2025 Impôt Express Tax. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
