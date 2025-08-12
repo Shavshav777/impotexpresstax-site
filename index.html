@@ -95,6 +95,27 @@
     </form>
   </div>
 </div>
+
+<script>
+  const getStartedBtn = document.getElementById('getStartedBtn');
+  const popupForm = document.getElementById('popupForm');
+  const closePopup = document.getElementById('closePopup');
+
+  getStartedBtn.addEventListener('click', () => {
+    popupForm.style.display = 'block';
+  });
+
+  closePopup.addEventListener('click', () => {
+    popupForm.style.display = 'none';
+  });
+
+  window.addEventListener('click', (e) => {
+    if (e.target === popupForm) {
+      popupForm.style.display = 'none';
+    }
+  });
+</script>
+  
   
   <footer>
     <p>Business Hours: Monday to Saturday, 9:00 AM – 8:00 PM<br>
