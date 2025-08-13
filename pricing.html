@@ -133,6 +133,51 @@
     </div>
   </main>
 
+  <!-- Get Started Button -->
+<button id="getStartedBtn" class="floating-btn">Get Started</button>
+
+<!-- Popup Form -->
+<div id="popupForm" class="popup-overlay">
+  <div class="popup-content">
+    <span class="close-btn" id="closePopup">&times;</span>
+    <h2>Get Started</h2>
+    <p>Fill out your details and we’ll get back to you shortly.</p>
+    <form action="https://getform.io/f/azygyyqb" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  const getStartedBtn = document.getElementById('getStartedBtn');
+  const popupForm = document.getElementById('popupForm');
+  const closePopup = document.getElementById('closePopup');
+
+  // Ensure popup is hidden initially
+  popupForm.style.display = 'none';
+
+  // Show popup when button clicked
+  getStartedBtn.addEventListener('click', () => {
+    popupForm.style.display = 'flex';
+  });
+
+  // Close popup when clicking close button
+  closePopup.addEventListener('click', () => {
+    popupForm.style.display = 'none';
+  });
+
+  // Close popup when clicking outside the content
+  window.addEventListener('click', (e) => {
+    if (e.target === popupForm) {
+      popupForm.style.display = 'none';
+    }
+  });
+</script>
+
+
   <!-- FOOTER (same as main site) -->
   <footer>
     <p>&copy; 2025 Impôt Express Tax. All rights reserved.</p>
