@@ -270,6 +270,33 @@ footer {
 }
 
 @media (max-width: 768px) {
+  header {
+    padding: 10px 20px; /* reduce padding on mobile */
+  }
+
+  .logo {
+    height: 50px; /* scale logo down */
+    margin-right: 10px;
+  }
+
+  .nav-container {
+    flex-direction: column; /* stack branding and nav */
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px; /* space between logo and nav links */
+  }
+
+  nav a {
+    margin-left: 0; /* remove extra spacing */
+    margin-right: 15px; /* optional small gap between links */
+    font-size: 0.9em; /* slightly smaller text for mobile */
+  }
+}
+
+
+@media (max-width: 768px) {
   .subpage-content {
     flex-direction: column;
     text-align: center;
