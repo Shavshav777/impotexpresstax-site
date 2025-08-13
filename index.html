@@ -18,7 +18,6 @@
   "url": "https://impotexpresstax.com",
   "email": "mailto:impotexpresstax@gmail.com",
   "addressCountry": "CA"
-  }
 }
 </script>
 </head>
@@ -42,7 +41,8 @@
     <div class="hero-overlay">
       <h1>Effortless Tax Preparation</h1>
       <p>Fast. Reliable. Secure. Start your tax filing today!</p>
-      <a class="button" href="#contact">Get Started</a>
+      <!-- Hero Get Started Button -->
+      <button id="getStartedBtnHero" class="button">Get Started</button>
     </div>
   </section>
 
@@ -78,7 +78,7 @@
     <p><a href="mailto:impotexpresstax@gmail.com">impotexpresstax@gmail.com</a></p>
   </section>
 
-<!-- Get Started Button -->
+<!-- Floating Get Started Button -->
 <button id="getStartedBtn" class="floating-btn">Get Started</button>
 
 <!-- Popup Form -->
@@ -97,16 +97,25 @@
 </div>
 
 <script>
-  const getStartedBtn = document.getElementById('getStartedBtn');
   const popupForm = document.getElementById('popupForm');
   const closePopup = document.getElementById('closePopup');
 
-  // Ensure popup is hidden initially
+  // Buttons: floating and hero
+  const getStartedBtns = [
+    document.getElementById('getStartedBtn'),      // floating
+    document.getElementById('getStartedBtnHero')  // hero
+  ];
+
+  // Hide popup initially
   popupForm.style.display = 'none';
 
-  // Show popup when button clicked
-  getStartedBtn.addEventListener('click', () => {
-    popupForm.style.display = 'flex';
+  // Show popup when any Get Started button is clicked
+  getStartedBtns.forEach(btn => {
+    if (btn) {
+      btn.addEventListener('click', () => {
+        popupForm.style.display = 'flex';
+      });
+    }
   });
 
   // Close popup when clicking close button
@@ -122,10 +131,10 @@
   });
 </script>
   
-  <footer>
-    <p>Business Hours: Monday to Saturday, 9:00 AM – 8:00 PM<br>
-    &copy; 2025 Impôt Express Tax. All rights reserved.</p>
-    <p><a href="privacy.html">Privacy Policy</a></p>
-  </footer>
+<footer>
+  <p>Business Hours: Monday to Saturday, 9:00 AM – 8:00 PM<br>
+  &copy; 2025 Impôt Express Tax. All rights reserved.</p>
+  <p><a href="privacy.html">Privacy Policy</a></p>
+</footer>
 </body>
 </html>
