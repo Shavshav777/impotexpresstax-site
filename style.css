@@ -214,33 +214,6 @@ footer {
     max-width: 80%;
   }
 
- /* Floating Button - Always floating and styled */
-.floating-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: var(--gold);
-  color: var(--navy);
-  border: none;
-  padding: 12px 20px;
-  border-radius: 50px;
-  font-weight: bold;
-  font-size: 16px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  cursor: pointer;
-  z-index: 1000;
-  transition: all 0.3s ease;
-  display: inline-block;
-}
-
-/* Hover effect for desktop */
-.floating-btn:hover {
-  background-color: var(--green);
-  color: #fff;
-  transform: translateY(-2px);
-}
-
 /* Popup Overlay */
 .popup-overlay {
   display: none; /* hidden by default */
