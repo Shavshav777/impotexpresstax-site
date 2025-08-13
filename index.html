@@ -101,21 +101,26 @@
   const popupForm = document.getElementById('popupForm');
   const closePopup = document.getElementById('closePopup');
 
+  // Ensure popup is hidden initially
+  popupForm.style.display = 'none';
+
+  // Show popup when button clicked
   getStartedBtn.addEventListener('click', () => {
-    popupForm.style.display = 'block';
+    popupForm.style.display = 'flex';
   });
 
+  // Close popup when clicking close button
   closePopup.addEventListener('click', () => {
     popupForm.style.display = 'none';
   });
 
+  // Close popup when clicking outside the content
   window.addEventListener('click', (e) => {
     if (e.target === popupForm) {
       popupForm.style.display = 'none';
     }
   });
 </script>
-  
   
   <footer>
     <p>Business Hours: Monday to Saturday, 9:00 AM – 8:00 PM<br>
